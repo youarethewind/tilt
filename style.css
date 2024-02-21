@@ -16,21 +16,21 @@ body{
     place-content: center;
     margin: 0;
     text-align: center;
-    font-variation-settings: "HROT" 100, "VROT" 1;
+    font-variation-settings: "HROT" -45, "VROT" -45;
     transition: 
         font-weight 500ms,
         font-variation-settings 3s;
 }
 
 .variable-font:hover{
-    /* font-weight:1000 ; */
+    font-weight:500 ;
     height:100vh;
-    font-size: 10em;
+    font-size: 7em;
     display:grid;
     place-content: center;
     margin: 0;
     text-align: center;
-    font-variation-settings: 'CONT' 400, 'MIDL' 1000;
+    font-variation-settings: "HROT" 45, "VROT" 45;
 }
 
 
