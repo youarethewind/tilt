@@ -33,6 +33,19 @@ body{
     font-variation-settings: "HROT" 45, "VROT" 45;
 }
 
+h3{
+    text-align: center;
+    font-size: 5em;
+    animation: weightChange 10s infinite;
+}
+
+@keyframes weightChange {
+    0%, 100%{
+        font-variation-settings: "wght" 800, "SPAC" 120;
+    }
+    50%{font-variation-settings: "wght" 100, "SPAC" 100;}
+    
+}
 
 h2{
  
