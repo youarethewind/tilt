@@ -1,14 +1,17 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff");
-    font-family: 'Forma';
+    src: url("fonts/TiltPrism[HROT\,VROT].woff2") format("woff2");
+    font-family: 'Tilt Prism';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: lightsteelblue;
-    font-family: 'Forma';
+    font-family: 'Tilt Prism', sans-serif;
+
+    .hero{
+        height:400px;
+    }
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -50,14 +53,15 @@ h3{
     font-weight:20; 
     text-align: center;
     font-size: 5em;
-    animation: weightChange 7s infinite;
+    animation: weightChange 20s infinite;
+    line-height: 20px;
 }
 
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "HROT" -45, "VROT" -45;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    50%{font-variation-settings: "HROT" 45, "VROT" 45;
     }
     
 }
