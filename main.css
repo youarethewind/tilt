@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: lightsteelblue;
+    background-color: rgb(212, 149, 192);
     font-family: 'Tilt Prism', sans-serif;
 
     .hero{
@@ -15,6 +15,7 @@
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
+    /* where to change width of coumns in desktop view */
     width: min(100% - 3rem, 80ch);
     margin-inline: auto;
 }
@@ -27,25 +28,27 @@ grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "h v"
+    "v h"
     "a a";
 }
 
-.history {
+#history {
 grid-area: h;
+background-color: rgb(123, 41, 123);
 }
 
-.variations{
+#variations{
 grid-area: v;
 }
 
-.alphabet {
+#alphabet {
 grid-area: a;
 }
 }
 /* CSS for the footer */
 footer{
-    background-color: gray;
+    background-color: rgb(113, 38, 87);
+    height: 100px;
 }
 
 /* variable font animation */
