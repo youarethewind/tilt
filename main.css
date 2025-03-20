@@ -51,6 +51,7 @@ footer{
     height: 100px;
 }
 
+
 /* variable font animation */
 h3{
     font-weight:20; 
@@ -65,9 +66,30 @@ h3{
         font-variation-settings: "HROT" -45, "VROT" -45;
     }
     50%{font-variation-settings: "HROT" 45, "VROT" 45;
-    }
     
+    }
 }
+/* animations for the variations secton */
+.horizontal-rotation{
+    font-size: 40px;
+    animation: variationHrotChange 10s infinite;
+  
+    @keyframes variationHrotChange {
+        0%, 100% {
+            font-variation-settings: "HROT" -45, "VROT" 0;
+        }
+        50% {
+            font-variation-settings: "HROT" 45, "VROT" 0;
+        }
+    }
+}
+    
+.vertical-rotation{
+    font-size: 40px;
+    animation: variationVrotChange 3s infinite;
+    font-variation-settings: "HROT" 0, "VROT" -45;
+}
+
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
