@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: rgb(212, 149, 192);
+    background-color: rgb(251, 194, 194);
     font-family: 'Tilt Prism', sans-serif;
 
     .hero{
@@ -28,13 +28,14 @@ grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "v h"
-    "a a";
+    "h h"
+    "a a"
+    "v v";
 }
 
 #history {
 grid-area: h;
-background-color: rgb(123, 41, 123);
+background-color: rgb(215, 246, 223);
 }
 
 #variations{
@@ -47,7 +48,7 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(113, 38, 87);
+    background-color: rgb(245, 162, 191);
     height: 100px;
 }
 
